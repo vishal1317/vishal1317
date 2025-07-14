@@ -4,7 +4,7 @@ services:
       container_name: web_nginx
       image: nginx:latest
       ports: 
-       - 8000:80 
+       - 8081:80 
       volumes: 
        - vol1:/usr/share/nginx/html
 
@@ -12,7 +12,7 @@ services:
       container_name: web_httpd
       image: httpd:latest
       ports: 
-       - 8001:80 
+       - 8082:80 
       volumes: 
        - vol2:/usr/local/apache2/htdocs/  
 
