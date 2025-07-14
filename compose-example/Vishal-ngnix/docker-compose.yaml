@@ -1,4 +1,4 @@
-Versions: '3.4'
+Version: '3.4'
 services: 
     web: 
       container_name: web_nginx
