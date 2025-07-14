@@ -1,0 +1,22 @@
+Versions: '3.4'
+services: 
+    web: 
+      container_name: web_nginx
+      image: nginx:latest
+      ports: 
+       - 8000:80 
+      volumes: 
+       - vol1:/usr/share/nginx/html
+
+    app: 
+      container_name: web_httpd
+      image: httpd:latest
+      ports: 
+       - 8001:80 
+      volumes: 
+       - vol2:/usr/local/apache2/htdocs/  
+
+volumes: 
+  vol1:
+  vol2:
+
